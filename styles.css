@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn{
+    width: 328px;
+    height: 67px;
+    border-radius: 30px;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 16px;
+}
+
+
+.logo_container{
+    width: 120px;
+    margin: 40px;
+}
+
+.encripter{
+    width: 577px;
+    height: 48px;
+    border: none;
+    margin: 89px 0 0 240px;
+    font-size: 32px;
+    font-weight: 400;
+    background: #F3F5FC;
+}
+
+.encripter::placeholder{
+    color: #0A3871;
+    font-family: 'Inter';
+}
+
+.buttons_container{
+    margin-left: 200px;
+    margin-top: 320px;
+}
+
+.encripter_btn{
+    background: #0A3871;
+    border: #0A3871;
+    color: #fff;
+}
+
+.desencripter_btn{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.icon_img{
+    width: 16px;
+    margin: 0 8px;
+}
+
+.encript_text-card{
+    background: #fff;
+    width: 300px;
+    height: 620px;
+    border-radius: 32px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+}
+
+.right_section{
+    margin: 24px 64px;
+}
+
+.encript_text-card>h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.encript_text-card>h4{
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+    font-weight: 400;
+}
+
