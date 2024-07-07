@@ -1,4 +1,4 @@
-// Función para encriptar el texto
+// Función para encriptar el texto //
 function encryptText(text) {
     return text.replace(/e/g, 'enter')
                .replace(/i/g, 'imes')
@@ -7,7 +7,7 @@ function encryptText(text) {
                .replace(/u/g, 'ufat');
 }
 
-// Función para desencriptar el texto
+// Función para desencriptar el texto //
 function decryptText(text) {
     return text.replace(/enter/g, 'e')
                .replace(/imes/g, 'i')
@@ -16,21 +16,21 @@ function decryptText(text) {
                .replace(/ufat/g, 'u');
 }
 
-// Evento para el botón de encriptar
+// Evento para el botón de encriptar//
 document.getElementById('encript_btn').addEventListener('click', function() {
     const inputText = document.getElementById('encripter').value;
     const encryptedText = encryptText(inputText);
     displayResult(encryptedText);
 });
 
-// Evento para el botón de desencriptar
+// Evento para el botón de desencriptar//
 document.getElementById('desencripter_btn').addEventListener('click', function() {
     const inputText = document.getElementById('encripter').value;
     const decryptedText = decryptText(inputText);
     displayResult(decryptedText);
 });
 
-// Función para mostrar el resultado
+// Función para mostrar el resultado//
 function displayResult(text) {
     const resultText = document.querySelector('.encripted_text');
     const resultSubtitle = document.querySelector('.subtitle');
@@ -38,7 +38,7 @@ function displayResult(text) {
     resultSubtitle.textContent = 'Texto procesado:';
 }
 
-// Evento para el botón de copiar
+// Evento para el botón de copiar//
 document.getElementById('copy_btn').addEventListener('click', function() {
     const textToCopy = document.querySelector('.encripted_text').textContent;
     navigator.clipboard.writeText(textToCopy).then(function() {
